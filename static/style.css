@@ -1,0 +1,31 @@
+html            { background-color: whitesmoke; }
+body            { background-color: white; }
+h4              { margin-top: 20px; }
+.container      { max-width: 728px; padding: 0; }
+.container2     { max-width: 728px; }
+
+a, h1, h2       { color: #377BA8; }
+h1, h2          { font-family: 'Georgia', serif; }
+h1              { border-bottom: 2px solid #eee; }
+h2              { font-size: 1.5em; }
+
+.table          { background:white; padding:40px; min-height:100%; position:relative; }
+.table tr       { cursor: pointer; }
+.table tr:hover { background: rgba(244,251,17,0.45); }
+.add-entry      { font-size: 0.9em; border-bottom: 1px solid #ccc; }
+.add-entry dl   { font-weight: bold; }
+
+a, .navbar-default .navbar-brand { color: #375eab; }
+.navbar-default, #x-footer { background-color: hsl(209, 51%, 92%);
+                             border-color: hsl(209, 51%, 88%); }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: hsl(209, 51%, 88%); }
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus { color: #000; background: #99b3ff; }
+.panel-default > .panel-heading { color: #333; background-color: transparent; }
+
+.flash          { background: #CEE5F5; padding: 0.5em;
+                  border: 1px solid #AACBE2; }
+.error          { background: #F0D6D6; padding: 0.5em; }
