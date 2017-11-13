@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="container">
+    <div class="jumbotron">
+        <h2>Request A Song</h2>
+        <hr>
+
+        {% if started == True %}
+            <form action="{{ url_for('request_song') }}" method="post" class="add-entry">
+                <dl>
+                    <dt>Your Name:
+                    <dd><input type="text" size="30" name="user">
+                    <dt>Artist:
+                    <dd><input type="text" size="30" name="artist">
+                    <dt>Song:
+                    <dd><input type="text" size="60" name="title">
+                    <hr>
+                    <dd><input id="clickforrefresh" type="submit" value="Submit Request">
+                </dl>
+            </form>
+        {% elif started == False %}
+            <h3>James has closed song requests for tonight.</h3>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}
