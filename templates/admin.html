@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="container">
+
+<div class="jumbotron">
+    <h2>Admin Console</h2>
+    <hr>
+
+    <form action="{{ url_for('admin') }}" method="post" class="admin">
+        <dl>
+            <dt>Delete Songs Database
+            <dd><input class='btn btn-delete btn-danger' type="submit" name="button" value="Delete">
+        </dl>
+        {% if started == False %}
+            <dl>
+                <dt>Start Karaoke
+                <dd><input class='btn btn-delete btn-success' type="submit" name="button" value="Start">
+            </dl>
+        {% elif started == True %}
+            <dl>
+                <dt>End Karaoke
+                <dd><input class='btn btn-delete btn-danger' type="submit" name="button" value="End">
+            </dl>
+        {% endif %}
+    </form>
+</div>
+
+{% endblock %}
